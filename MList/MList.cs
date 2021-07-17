@@ -19,7 +19,7 @@ namespace MList
             get
             {
                 if (index > _maxIndex)
-                    throw new ArgumentNullException(nameof(index));
+                    throw new IndexOutOfRangeException(nameof(index));
 
                 return _array[index];
             }
